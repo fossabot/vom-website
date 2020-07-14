@@ -86,27 +86,13 @@
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <!-- jQuery local fallback -->
-    <script>
-      if (typeof(jQuery) === 'undefined') {
-        document.write('<script src="/local-fallback/jquery-3.5.1.slim.min.js"><\/script>');
-      }
-    </script>
+    <script src="js/cdn-local-fallback/jquery-fallback.js"></script>
     <!-- Bootstrap JS Bundle (includes Popper.js) CDN -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
     <!-- Bootstrap JS Bundle local fallback -->
-    <script>
-      if (typeof($.fn.modal) === 'undefined') {
-        document.write('<script src="/local-fallback/bootstrap.bundle.min.js"><\/script>');
-      }
-    </script>
+    <script src="js/cdn-local-fallback/bootstrap-js-fallback.js"></script>
     <!-- Bootstrap CSS local fallback -->
     <div id="bootstrapCssTest" class="collapse"></div>
-    <script>
-      $(document).ready(function() {
-        if($('#bootstrapCssTest').is(':visible')) {
-          $('head').prepend('<link rel="stylesheet" href="/local-fallback/bootstrap.min.css">');
-        }
-      });
-    </script>
+    <script src="js/cdn-local-fallback/bootstrap-css-fallback.js"></script>
   </body>
 </html>
