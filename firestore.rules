@@ -10,5 +10,16 @@ service cloud.firestore {
       }
       allow create: if validateLoadEvent();
     }
+    match /link_clicks/{link_click} {
+      function validateClickEvent() {
+        return request.resource.data.keys().hasOnly(['href', 'page_path', 'timestamp']) &&
+        request.resource.data['href'] is string &&
+        request.resource.data['href'].size() < 500 &&
+        request.resource.data['page_path'] is string &&
+        request.resource.data['page_path'].size() < 100 &&
+        request.resource.data['timestamp'] == request.time;
+      }
+      allow create: if validateClickEvent();
+    }
   }
 }
