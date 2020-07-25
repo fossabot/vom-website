@@ -21,5 +21,16 @@ service cloud.firestore {
       }
       allow create: if validateClickEvent();
     }
+    match /qr_referrals/{qr_referral} {
+      function validateReferralEvent() {
+        return request.resource.data.keys().hasOnly(['page_path', 'qr_id', 'date']) &&
+        request.resource.data['page_path'] is string &&
+        request.resource.data['page_path'].size() < 100 &&
+        request.resource.data['qr_id'] is string &&
+        request.resource.data['qr_id'].size() == 20 &&
+        request.resource.data['date'] == request.time.date();
+      }
+      allow create: if validateReferralEvent();
+    }
   }
 }
