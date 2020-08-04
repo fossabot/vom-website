@@ -1,3 +1,5 @@
+// Analytics
+// This file is named 'stats.js' instead of 'analytics.js' to prevent it from getting automatically blocked by common filters
 $(document).ready(function() {
   let db = firebase.firestore();
   // Check query string for QR code referral
