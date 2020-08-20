@@ -1,26 +1,16 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-
-    <title>Get help | Value Our Minds</title>
-  </head>
+  <module href="/components/head.html" locals='{"title": "Get help"}'></module>
   <body>
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <nav class="navbar navbar-expand navbar-dark bg-accent sticky-top">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active">Get help</a>
+        <span class="nav-item nav-link active">Get help</span>
         <a class="nav-item nav-link" href="/about">About</a>
       </div>
     </nav>
     <div class="container-fluid">
-      <h1>Get help now (available 24/7)</h1>
+      <h1>You are not alone</h1>
+      <p id="subtitle">These resources are here for you 24/7</p>
       <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
         <div class="col mb-4">
           <div class="card h-100">
@@ -83,16 +73,6 @@
       </div>
     </div>
 
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <!-- jQuery local fallback -->
-    <script src="/js/cdn-local-fallback/jquery-fallback.js"></script>
-    <!-- Bootstrap JS Bundle (includes Popper.js) CDN -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS Bundle local fallback -->
-    <script src="/js/cdn-local-fallback/bootstrap-js-fallback.js"></script>
-    <!-- Bootstrap CSS local fallback -->
-    <div id="bootstrapCssTest" class="collapse"></div>
-    <script src="/js/cdn-local-fallback/bootstrap-css-fallback.js"></script>
+    <script src="bundle.js"></script>
   </body>
 </html>
