@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf public && mkdir public && cp -a src/compiled/. public/",
+    "clean": "rm -rf public && rm -rf .no-directory && mkdir public && mkdir .no-directory && cp -a src/compiled/. public/",
     "css:lint": "stylelint src/scss/*.scss",
     "css:compile": "node-sass --output-style compressed -o public src/scss",
     "css:prefix": "postcss -u autoprefixer -r public/*.css",
