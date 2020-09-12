@@ -1,5 +1,27 @@
 {
   "projects": {
     "default": "website-7d600"
+  },
+  "targets": {
+    "website-7d600": {
+      "hosting": {
+        "website": [
+          "website-7d600"
+        ],
+        "domain-redirects": [
+          "domain-redirects-d9b24"
+        ],
+        "mindthe5-redirect": [
+          "mindthe5-redirect"
+        ]
+      }
+    },
+    "website-dev-f4dad": {
+      "hosting": {
+        "website": [
+          "website-dev-f4dad"
+        ]
+      }
+    }
   }
 }
