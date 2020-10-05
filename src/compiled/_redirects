@@ -1,16 +1,5 @@
-# Primary domain redirects
 # (valueourminds.com is automatically redirected to www.valueourminds.com by Netlify)
-https://ww.valueourminds.com/* https://www.valueourminds.com/:splat 301!
-https://wwww.valueourminds.com/* https://www.valueourminds.com/:splat 301!
-https://valueourminds.org/* https://www.valueourminds.com/:splat 301!
-https://www.valueourminds.org/* https://www.valueourminds.com/:splat 301!
-https://valueourmind.com/* https://www.valueourminds.com 301!
-https://www.valueourmind.com/* https://www.valueourminds.com 301!
-# Mind the 5 domain redirects
-https://www.mindthe5.com/* https://www.valueourminds.com/the5 302!
-https://mindthe5.com/* https://www.mindthe5.com/:splat 301!
-https://mindthe5.org/* https://www.mindthe5.com 301!
-https://www.mindthe5.org/* https://www.mindthe5.com 301!
+# Other domains managed in separate repository (https://github.com/valueourminds/website-domain-redirects)
 # Netlify domain redirect
 https://website-40342a.netlify.app/* https://www.valueourminds.com 301!
 
