@@ -30,14 +30,14 @@ export default {
       description: 'Mental health resources, here for you 24/7.',
       resources: [
         {
-          title: '911',
+          title: 'Crisis Text Line',
           description:
-            'If you or someone you know is in immediate danger, call 911 now.',
+            'For any crisis, painful emotion, or anytime you need support.',
           buttons: [
             {
-              href: 'tel:911',
-              style: 'danger',
-              text: 'Call 911',
+              href: 'sms:741741?&body=HOME',
+              style: 'primary',
+              text: 'Text',
             },
           ],
         },
@@ -59,13 +59,13 @@ export default {
           ],
         },
         {
-          title: 'Crisis Text Line',
-          description: 'For any crisis.',
+          title: '911',
+          description: 'For life-threatening emergencies.',
           buttons: [
             {
-              href: 'sms:741741?&body=HOME',
-              style: 'primary',
-              text: 'Text',
+              href: 'tel:911',
+              style: 'danger',
+              text: 'Call 911',
             },
           ],
         },
