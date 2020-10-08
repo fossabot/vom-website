@@ -2,23 +2,7 @@
   <div>
     <h1>You are not alone</h1>
     <p id="subtitle">These resources are here for you 24/7</p>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
-      <div v-for="resource in resources" :key="resource.title" class="col mb-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h2 class="card-title">{{ resource.title }}</h2>
-            <p class="card-text">{{ resource.description }}</p>
-            <b-button
-              v-for="button in resource.buttons"
-              :key="button.href"
-              :variant="button.style"
-              :href="button.href"
-              >{{ button.text }}</b-button
-            >
-          </div>
-        </div>
-      </div>
-    </div>
+    <card-deck :cards="cards" />
   </div>
 </template>
 
@@ -28,11 +12,12 @@ export default {
     return {
       title: 'Get help',
       description: 'Mental health resources, here for you 24/7.',
-      resources: [
+      cards: [
         {
           title: 'Crisis Text Line',
-          description:
+          description: [
             'For any crisis, painful emotion, or anytime you need support.',
+          ],
           buttons: [
             {
               href: 'sms:741741?&body=HOME',
@@ -43,8 +28,9 @@ export default {
         },
         {
           title: 'Suicide Prevention Lifeline',
-          description:
+          description: [
             'For anyone who is depressed, going through a hard time, needs to talk, or is thinking about suicide.',
+          ],
           buttons: [
             {
               href: 'tel:1-800-273-8255',
@@ -60,7 +46,7 @@ export default {
         },
         {
           title: '911',
-          description: 'For life-threatening emergencies.',
+          description: ['For life-threatening emergencies.'],
           buttons: [
             {
               href: 'tel:911',
@@ -71,8 +57,9 @@ export default {
         },
         {
           title: 'The Trevor Project',
-          description:
+          description: [
             'For LGBTQ individuals who are in crisis, feeling suicidal, or in need of a safe and judgment-free place to talk.',
+          ],
           buttons: [
             {
               href: 'tel:1-866-488-7386',
@@ -93,8 +80,9 @@ export default {
         },
         {
           title: 'Domestic Violence Hotline',
-          description:
+          description: [
             'For anyone who is experiencing domestic violence, seeking resources or information, or questioning unhealthy aspects of their relationship.',
+          ],
           buttons: [
             {
               href: 'tel:1-800-799-7233',
@@ -110,8 +98,9 @@ export default {
         },
         {
           title: 'Disaster Distress Helpline',
-          description:
+          description: [
             'For anyone who is experiencing emotional distress related to any natural or human-caused disaster.',
+          ],
           buttons: [
             {
               href: 'tel:1-800-985-5990',
@@ -136,9 +125,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.btn {
-  margin-right: 0.3em;
-}
-</style>

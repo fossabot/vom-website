@@ -2,6 +2,7 @@
   <b-navbar type="dark" variant="accent" sticky>
     <b-navbar-nav>
       <b-nav-item to="/">Get help</b-nav-item>
+      <b-nav-item to="/the5/">Mind the 5</b-nav-item>
       <b-nav-item to="/about/">About</b-nav-item>
     </b-navbar-nav>
   </b-navbar>

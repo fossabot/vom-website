@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 297.25 230.88" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clipPath3453" clipPathUnits="userSpaceOnUse">
+      <rect id="rect3455" style="stroke-linejoin:round;stroke:#ff0000;stroke-linecap:round;stroke-width:8.6;fill:none" height="58.074" width="103.7" y="43.593" x="-129.19"/>
+    </clipPath>
+  </defs>
+  <g id="layer2" transform="matrix(1, 0, 0, 1, -11.439, -7.3467)">
+    <path id="path2626" style="stroke-linecap: round; stroke-width: 10; fill: none; stroke: rgb(0, 124, 190);" d="m56.889 77.37c-0.198 0-0.395 0 0 0z"/>
+    <path id="path2628" style="stroke-linecap: round; stroke-width: 10; fill: none; stroke: rgb(0, 124, 190);" d="m144.59 53.074l-87.109 23.111"/>
+    <path id="path3400" style="stroke-linecap: round; stroke-width: 10; fill: none; stroke: rgb(0, 124, 190);" d="m173.04 51.296a14.222 14.222 0 1 1 -28.45 0 14.222 14.222 0 1 1 28.45 0z" transform="translate(1.1852 -4.7407)"/>
+    <path id="path3402" style="stroke-linecap: round; stroke-width: 10; fill: none; stroke: rgb(0, 124, 190);" d="m263.11 20.481l-87.11 23.112"/>
+    <path id="path3406" style="fill-rule: evenodd; stroke-width: 10; fill: rgb(255, 0, 0); stroke: rgb(0, 124, 190);" d="m156.7 34.236l-7.62-21.583"/>
+    <path id="path3410" style="fill-rule: evenodd; fill-opacity: 0.75; stroke-width: 10; stroke: rgb(0, 124, 190);" d="m160.59 59l-0.59 174.22"/>
+    <path id="path3412" style="fill-rule: evenodd; fill-opacity: 0.75; stroke-width: 10.183; stroke: rgb(0, 124, 190);" d="m30.017 230.65l261.15 0.41"/>
+  </g>
+  <path id="path3434" style="stroke-linejoin: round; stroke-linecap: round; stroke-width: 8.6; fill: none; stroke: rgb(0, 124, 190);" d="m13.45 150.02l32.593-81.182 33.778 83.552"/>
+  <path id="path3438" style="stroke-linejoin: round; stroke-linecap: round; stroke-width: 8.6; fill: none; stroke: rgb(0, 124, 190);" d="m219.08 94.32l32.59-81.185 33.78 83.555"/>
+  <path id="path3440" style="stroke-linejoin: round; stroke-linecap: round; stroke-width: 8.6; stroke: rgb(0, 124, 190); fill: rgb(0, 124, 190);" d="m-33.979 48.926c0 20.752-18.73 37.595-41.808 37.595s-41.803-16.843-41.803-37.595 18.725-37.595 41.803-37.595 41.808 16.843 41.808 37.595zm0-4h-83.611" clip-path="url(#clipPath3453)" transform="matrix(1, 0, 0, 1, 121.890004, 97.542)"/>
+  <path id="path3457" style="stroke-linejoin: round; stroke-linecap: round; stroke-width: 8.6; stroke: rgb(0, 124, 190); fill: rgb(0, 124, 190);" d="m-33.979 48.926c0 20.752-18.73 37.595-41.808 37.595s-41.803-16.843-41.803-37.595 18.725-37.595 41.803-37.595 41.808 16.843 41.808 37.595zm0-4h-83.611" clip-path="url(#clipPath3453)" transform="matrix(1, 0, 0, 1, 326.929985, 45.394001)"/>
+</svg>
