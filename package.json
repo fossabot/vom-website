@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "generate": "npm run lint && nuxt generate --fail-on-error",
+    "generate": "npm run lint && nuxt generate --modern --fail-on-error",
     "lint:js": "eslint --ext .js,.vue .",
     "lint:style": "stylelint **/*.{vue,css}",
     "lint": "npm run lint:js && npm run lint:style"
