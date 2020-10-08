@@ -3,3 +3,11 @@
   Referrer-Policy: no-referrer
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
+/_nuxt/*
+  Cache-Control: public
+  Cache-Control: max-age=31536000
+  Cache-Control: immutable
+/_nuxt/LICENSES
+  Cache-Control: public
+  Cache-Control: max-age=0
+  Cache-Control: must-revalidate
