@@ -1,7 +1,9 @@
 <template>
   <div>
-    <h1>You are not alone</h1>
-    <p id="subtitle">These resources are here for you 24/7</p>
+    <heading
+      heading="You are not alone"
+      subheading="These resources are here for you 24/7"
+    />
     <card-deck :cards="cards" />
   </div>
 </template>
@@ -10,8 +12,6 @@
 export default {
   data() {
     return {
-      title: 'Get help',
-      description: 'Mental health resources, here for you 24/7.',
       cards: [
         {
           title: 'Crisis Text Line',
@@ -112,16 +112,14 @@ export default {
       ],
     }
   },
-  head() {
-    return {
-      title: `${this.title} | Value Our Minds`,
-      meta: [
-        {
-          name: 'description',
-          content: this.description,
-        },
-      ],
-    }
+  head: {
+    title: 'Get help | Value Our Minds',
+    meta: [
+      {
+        name: 'description',
+        content: 'Mental health resources, here for you 24/7.',
+      },
+    ],
   },
 }
 </script>

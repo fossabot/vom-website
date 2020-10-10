@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Page Not Found</h1>
+    <heading heading="Page Not Found" />
     <p>
       The specified file was not found on this website. Please check the URL for
       mistakes and try again.
@@ -11,21 +11,14 @@
 
 <script>
 export default {
-  data() {
-    return {
-      title: 'Page Not Found',
-    }
-  },
-  head() {
-    return {
-      title: `${this.title} | Value Our Minds`,
-      meta: [
-        {
-          name: 'robots',
-          content: 'noindex',
-        },
-      ],
-    }
+  head: {
+    title: 'Page Not Found | Value Our Minds',
+    meta: [
+      {
+        name: 'robots',
+        content: 'noindex',
+      },
+    ],
   },
 }
 </script>

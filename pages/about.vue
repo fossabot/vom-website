@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>About</h1>
+    <heading heading="About" />
     <h2>Our Purpose</h2>
     <p>
       To promote mental health and build community so that everyone can feel
@@ -27,23 +27,15 @@
 
 <script>
 export default {
-  data() {
-    return {
-      title: 'About',
-      description:
-        'Our purpose is to promote mental health and build community so that everyone can feel accepted, safe, and understood.',
-    }
-  },
-  head() {
-    return {
-      title: `${this.title} | Value Our Minds`,
-      meta: [
-        {
-          name: 'description',
-          content: this.description,
-        },
-      ],
-    }
+  head: {
+    title: 'About | Value Our Minds',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Our purpose is to promote mental health and build community so that everyone can feel accepted, safe, and understood.',
+      },
+    ],
   },
 }
 </script>

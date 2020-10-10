@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1>Mind the 5</h1>
-    <p id="subtitle">Steps to support mental health</p>
+    <heading heading="Mind the 5" subheading="Steps to support mental health" />
     <card-deck :cards="cards" />
   </div>
 </template>
@@ -10,9 +9,6 @@
 export default {
   data() {
     return {
-      title: 'Mind the 5',
-      description:
-        '5 simple steps to support mental health. Take the pledge to #mindthe5',
       cards: [
         {
           image: {
@@ -88,16 +84,15 @@ export default {
       ],
     }
   },
-  head() {
-    return {
-      title: `${this.title} | Value Our Minds`,
-      meta: [
-        {
-          name: 'description',
-          content: this.description,
-        },
-      ],
-    }
+  head: {
+    title: 'Mind the 5 | Value Our Minds',
+    meta: [
+      {
+        name: 'description',
+        content:
+          '5 simple steps to support mental health. Take the pledge to #mindthe5',
+      },
+    ],
   },
 }
 </script>
