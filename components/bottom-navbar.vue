@@ -1,6 +1,6 @@
 <template>
   <b-nav id="footer" align="center">
-    <b-button variant="outline-primary">Send feedback</b-button>
+    <b-button variant="outline-primary" to="/feedback/">Send feedback</b-button>
     <b-nav-item to="/privacy/">Privacy</b-nav-item>
   </b-nav>
 </template>

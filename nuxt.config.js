@@ -88,7 +88,16 @@ export default {
   bootstrapVue: {
     bootstrapCSS: false,
     bootstrapVueCSS: false,
-    componentPlugins: ['LayoutPlugin', 'NavbarPlugin', 'ButtonPlugin'],
+    componentPlugins: [
+      'LayoutPlugin',
+      'NavbarPlugin',
+      'ButtonPlugin',
+      'FormPlugin',
+      'FormGroupPlugin',
+      'FormRadioPlugin',
+      'FormInputPlugin',
+      'FormTextareaPlugin',
+    ],
   },
 
   styleResources: {
