@@ -18,14 +18,16 @@
           >
             {{ paragraph }}
           </p>
-          <b-button
-            v-for="button in card.buttons"
-            :key="button.text"
-            :variant="button.style"
-            :href="button.href"
-            :to="button.to"
-            >{{ button.text }}</b-button
-          >
+          <div v-if="card.buttons" id="buttons">
+            <b-button
+              v-for="button in card.buttons"
+              :key="button.text"
+              :variant="button.style"
+              :href="button.href"
+              :to="button.to"
+              >{{ button.text }}</b-button
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -45,7 +47,14 @@ export default {
 
 <style lang="scss" scoped>
 .btn {
-  margin-right: 0.3em;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+#buttons {
+  margin-bottom: -0.3rem; // Removes margin on final row of buttons
 }
 .card img {
   object-fit: contain;

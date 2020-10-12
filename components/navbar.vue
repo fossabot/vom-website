@@ -14,8 +14,7 @@ nav {
 }
 
 .navbar {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
 }
 
 .navbar-dark .navbar-nav .nav-link {
