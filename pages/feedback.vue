@@ -81,14 +81,44 @@ export default {
       },
     }
   },
+  computed: {
+    formInput() {
+      return (
+        this.form.eventDescription !== '' ||
+        this.form.suggestions !== '' ||
+        this.form.email !== ''
+      )
+    },
+  },
+  mounted() {
+    window.addEventListener('beforeunload', (event) => {
+      if (this.formInput) {
+        event.preventDefault()
+        // For older browsers
+        event.returnValue = 'Leave page? Your changes will be lost.'
+      }
+    })
+  },
   methods: {
-    onSubmit(evt) {
-      evt.preventDefault()
+    onSubmit(event) {
+      event.preventDefault()
       alert(JSON.stringify(this.form))
     },
   },
   head: {
     title: 'Send feedback | Value Our Minds',
+  },
+  beforeRouteLeave(to, from, next) {
+    if (this.formInput) {
+      const answer = window.confirm('Leave page? Your changes will be lost.')
+      if (answer) {
+        next()
+      } else {
+        next(false)
+      }
+    } else {
+      next()
+    }
   },
 }
 </script>
